@@ -1,0 +1,157 @@
+
+    <html><body>
+    <h2>arXiv cs.CR 每日摘要</h2>
+    
+        <h3>1. Toward provably private analytics and insights into GenAI use</h3>
+        <p><b>作者：</b>Albert Cheu, Artem Lagzdin, Brett McLarnon, Daniel Ramage, Katharine Daly, Marco Gruteser, Peter Kairouz, Rakshita Tandon, Stanislav Chiknavaryan, Timon Van Overveldt, Zoe Gong<br/>
+        <a href="http://arxiv.org/abs/2510.21684v1">摘要页</a> | <a href="https://arxiv.org/pdf/2510.21684v1">PDF</a></p>
+        <p style="white-space: pre-line;">隐私、分析、可扩展系统、联邦分析和AI洞察团队联合发布了一款新一代联邦分析系统，旨在为生成式AI (GenAI) 的使用提供可证明隐私的分析和洞察。鉴于迫切需要了解用户对GenAI工具的参与度（尤其在涉及敏感非结构化数据时），同时需严格维护隐私和安全标准以防潜在的运营商检查，本研究旨在解决在不损害个人隐私的前提下获取有意义洞察的固有挑战。
+
+所提出的系统利用可信执行环境（TEEs），例如AMD SEV-SNP和Intel TDX，为所有服务器端数据处理建立可验证的机密性和完整性。设备对数据进行加密并上传，同时通过访问策略指定允许的处理步骤。一个开源的、由TEE托管的密钥管理服务（KMS）严格控制对解密密钥的访问，确保数据仅可由经授权的、受TEE保护的二进制程序访问。该架构支持灵活的工作负载，包括利用大型语言模型（LLMs）对非结构化数据进行结构化汇总处理，然后与具有自动调整的差分隐私（DP）保证的数据进行聚合。
+
+该系统的一个基石是其固有的透明度，允许外部方验证所有原始数据和派生数据均在TEEs内独占处理，从而保护其免受系统运营商的检查，并验证差分隐私（DP）始终应用于所有发布结果。作者声称，该系统为形式化的隐私保证设定了新的标准。该联邦分析系统已成功部署于生产环境，为真实世界的GenAI体验提供了有价值且可证明隐私的洞察，展示了其在平衡实用性与强大隐私保护方面的有效性。</p>
+        
+        <h3>2. PTMF: A Privacy Threat Modeling Framework for IoT with Expert-Driven Threat Propagation Analysis</h3>
+        <p><b>作者：</b>Emmanuel Dare Alalade, Ashraf Matrawy<br/>
+        <a href="http://arxiv.org/abs/2510.21601v1">摘要页</a> | <a href="https://arxiv.org/pdf/2510.21601v1">PDF</a></p>
+        <p style="white-space: pre-line;">**加拿大卡尔顿大学信息技术学院**的研究人员开发了一种新颖的物联网系统隐私威胁建模框架（PTMF），该框架结合了专家驱动的威胁传播分析。这项工作解决了现有隐私威胁分析（PTA）方法中的一个关键空白，这些方法通常主要关注威胁发生的位置或可能性，而忽视了威胁行为者的具体行动和意图。为提供更全面的理解，PTMF 被设计为一个以隐私为中心的框架，它将 MITRE ATT&amp;CK 框架中的精选策略与源自 LINDDUN 威胁模型的隐私特有技术相结合。该框架通过五个顺序阶段分析隐私威胁：识别威胁行为者、攻击面、入口点、传播模式以及由此产生的最终影响。为对 PTMF 进行实证验证，作者进行了一项用户研究，其中来自工业界和学术界的12位安全和隐私专家使用基于 PTMF 的问卷评估了12种常见的物联网隐私威胁，其中包括“物联网用户身份识别（IU）”。
+
+对所收集数据的基于专家洞察的分析成功识别出了三大主要威胁行为者，以及他们在“物联网用户身份识别”威胁和其他已分析隐私威胁期间所利用的关键路径。这种对威胁行为者的活动、技术和传播模式的系统性刻画，为理解如何在物联网系统中主动有效地部署隐私保护措施奠定了坚实基础。通过提供对隐私威胁行为者运作方法的详细洞察，PTMF 为针对性隐私保护技术（PPTs）的开发做出了重大贡献，并提升了物联网环境中的整体可信度和隐私结构。</p>
+        
+        <h3>3. Actionable Cybersecurity Notifications for Smart Homes: A User Study on the Role of Length and Complexity</h3>
+        <p><b>作者：</b>Victor Jüttner, Charlotte S. Löffler, Erik Buchmann<br/>
+        <a href="http://arxiv.org/abs/2510.21508v1">摘要页</a> | <a href="https://arxiv.org/pdf/2510.21508v1">PDF</a></p>
+        <p style="white-space: pre-line;">德国莱比锡大学计算机科学系、德国卡塞尔大学认知心理学系以及可伸缩数据分析与人工智能中心 (ScaDS.AI) 合作研究了网络安全通知的设计如何影响智能家居用户。鉴于智能家居设备的普及带来了显著的网络安全风险，且传统的入侵检测系统 (IDS) 警报对普通用户而言往往过于技术化，作者旨在确定大语言模型 (LLM) 生成的通知的最佳长度和复杂性，以有效吸引不同技术熟练程度的用户。
+
+为此，研究团队对130名参与者进行了一项实验性在线用户研究。研究方法涉及系统地改变LLM生成的安全通知的长度（短与长）和复杂性（初级、中级、专家级）。这些通知是基于Snort IDS规则，利用OpenAI的GPT-4o创建的。参与者被要求对这些通知的一个子集，就其受欢迎程度、可理解性和采取行动的动机进行评分。研究结果表明，中等复杂度的通知在所有用户群体中始终获得最高评分，无论其先前的技术熟练程度如何。此外，长度的影响则较为微妙：较长的通知被发现对初级内容更有效，而较短的通知则略受专家级内容的青睐。这些结果为在智能家居环境中设计可操作的、以用户为中心且广泛可访问的网络安全通知提供了具体指导方针。</p>
+        
+        <h3>4. Introducing GRAFHEN: Group-based Fully Homomorphic Encryption without Noise</h3>
+        <p><b>作者：</b>Pierre Guillot, Auguste Hoang Duc, Michel Koskas, Florian Méhats<br/>
+        <a href="http://arxiv.org/abs/2510.21483v1">摘要页</a> | <a href="https://arxiv.org/pdf/2510.21483v1">PDF</a></p>
+        <p style="white-space: pre-line;">研究团队提出了一种名为GRAFHEN（基于群的无噪声全同态加密）的新型密码方案，旨在解决全同态加密（FHE）中噪声管理这一长期存在的挑战。鉴于现有FHE方案中噪声增长以及自举的必要性所带来的显著计算开销和实际局限，GRAFHEN旨在提供真正的无噪声同态计算，从而实现任意深度的操作，且无需承受此类负担。
+
+GRAFHEN的方法论基于群中同态编码的既有研究成果。该方案利用精心构建的重写系统来表示这些群，其中秘密生成元充当私钥，而公开规则则用于执行计算。这种方法旨在使“子群成员问题”（即攻击者面临的核心挑战）变得极其困难，从而最大限度地保障方案的安全性。一个显著特点在于，GRAFHEN用于缩短消息的“重写”过程是一种无损数据压缩技术，这与传统的FHE自举有着本质区别，并且效率远超后者。基准测试结果表明，GRAFHEN的运行速度比OpenFHE等现有FHE标准快数个数量级。该团队通过对多种攻击向量进行严谨分析，并经过独立专家评估，进一步证实了该方案的安全性，最终将GRAFHEN方案呈现为一种无需噪声或自举、安全且高性能的全同态加密协议。</p>
+        
+        <h3>5. SBASH: a Framework for Designing and Evaluating RAG vs. Prompt-Tuned LLM Honeypots</h3>
+        <p><b>作者：</b>Adetayo Adebimpe, Helmut Neukirchen, Thomas Welsh<br/>
+        <a href="http://arxiv.org/abs/2510.21459v1">摘要页</a> | <a href="https://arxiv.org/pdf/2510.21459v1">PDF</a></p>
+        <p style="white-space: pre-line;">A wide variety of LLM models are available. 我们，冰岛大学计算机科学系，雷克雅未克，冰岛，旨在解决网络安全威胁情报中动态、真实蜜罐设计所面临的关键挑战。传统的蜜罐通常缺乏上下文感知能力和适应性，而整合大型语言模型（LLM）则带来了准确性（如幻觉问题）、响应延迟、高昂的运营成本以及在使用云服务时的数据保护顾虑等问题。为克服这些局限性，我们提出了系统级注意力外壳蜜罐（System-Based Attention Shell Honeypot, SBASH）框架。SBASH框架利用轻量级本地LLM以减轻数据隐私风险和运营成本，并通过模块化设计增强真实性，该设计支持多种shell类型、动态文件系统生成，并通过检索增强生成（Retrieval Augmented Generation, RAG）和系统提示词（system prompt）调优来引导LLM响应。该框架通过命令净化和分类处理攻击者输入，将适当的命令导向RAG系统或进行本地执行，并随后记录交互日志以用于威胁情报分析。
+
+为进行评估，我们实例化了基于SBASH的Linux Bash shell蜜罐HoneywareX，并评估了其在不同轻量级LLM（Gemma 3 (4B, 12B) 和 Llama 3.1 (8B)）下，在RAG和非RAG模式以及有无系统提示词调优情况下的性能。我们的多准则评估包括响应时间差异、人类对真实性的感知，以及使用Levenshtein距离、SBert和BertScore度量与真实系统的相似性。结果表明，RAG能有效提高未调优LLM模型的准确性。值得注意的是，通过特定系统提示词调优以模拟Linux系统的模型，其准确性与未经调优但经RAG增强的模型相当，但响应延迟略低。这表明，在轻量级本地LLM的特定准确性水平下，有效的提示词调优可以作为RAG的一种替代方案。</p>
+        
+        <h3>6. Towards Socio-Technical Topology-Aware Adaptive Threat Detection in Software Supply Chains</h3>
+        <p><b>作者：</b>Thomas Welsh, Kristófer Finnsson, Brynjólfur Stefánsson, Helmut Neukirchen<br/>
+        <a href="http://arxiv.org/abs/2510.21452v1">摘要页</a> | <a href="https://arxiv.org/pdf/2510.21452v1">PDF</a></p>
+        <p style="white-space: pre-line;">Department of Computer Science, University of Iceland, Reykjavík, Iceland, 提出了“面向软件供应链（SSCs）的社会技术拓扑感知自适应威胁检测”这一新颖的研究愿景。鉴于软件供应链攻击（例如 XZ Utils 事件）日益增长的复杂性和频率，作者强调了现有纯技术方法的不足，这些方法常常忽略关键的社会技术动态。他们认为，由于软件供应链的动态异构性，普遍的漏洞分析面临挑战，因此需要兼顾技术依赖性和人类行为的有针对性的自适应威胁检测策略。
+
+为解决此问题，所提出的方法包括开发并研究使用社会技术模型以支持自适应威胁检测。这通过生成和监测软件供应链的社会技术拓扑来实现，这些拓扑整合了来自多种来源的数据，包括版本控制系统、开发者聊天记录和邮件列表。这些拓扑支持在一个自适应框架内，对结构属性以及社会和技术组件之间的相互作用进行跨维度分析。作为佐证实例，他们对 XZ Utils 攻击的初步分析表明，聚合技术和社会数据，例如异常提交模式、开发者影响力变化、通信情感以及单个账户背后多位作者的迹象，能够揭示与恶意活动相关的可疑行为。这些发现支撑了他们对一个框架的愿景，该框架通过持续监测和分析技术和社会层面的危害指标，能够自适应地识别和响应复杂和不断演变的威胁。</p>
+        
+        <h3>7. FLAMES: Fine-tuning LLMs to Synthesize Invariants for Smart Contract Security</h3>
+        <p><b>作者：</b>Mojtaba Eshghie, Gabriele Morello, Matteo Lauretano, Alexandre Bartel, Martin Monperrus<br/>
+        <a href="http://arxiv.org/abs/2510.21401v1">摘要页</a> | <a href="https://arxiv.org/pdf/2510.21401v1">PDF</a></p>
+        <p style="white-space: pre-line;">Ume˚a University, Ume˚a, Sweden, KTH Royal Institute of Technology, Stockholm, Sweden
+
+瑞典于默奥大学和瑞典皇家理工学院的研究人员共同提出了FLAMES，这是一种新颖的自动化方法，旨在合成可执行的运行时防护（runtime guards），以增强智能合约的安全性。鉴于智能合约漏洞每年造成数十亿美元的损失，且现有自动化工具无法生成可部署的防御措施，FLAMES致力于解决如何自动获取有用不变量（invariants）这一挑战性问题。该方法采用领域适应型大型语言模型（LLMs），并通过“中间填充”监督微调（fill-in-the-middle supervised fine-tuning）进行专门化训练。此微调过程利用一个精心策划的数据集，其中包含从514,506个已验证合约中提取的真实世界`require`语句，从而使FLAMES能够学习重建缺失的不变量。FLAMES的流程（pipeline）能够自动分析合约上下文、对LLM进行微调，进而合成Solidity的`require`语句，作为函数入口和出口处的前置或后置条件。值得注意的是，该方法无需漏洞标签、符号分析或自然语言规范。
+
+FLAMES的有效性在多个维度上得到了广泛评估。在可编译性方面，合成的不变量在注入真实合约后，FLAMES实现了96.7%的高编译成功率。在语义质量方面，在一个包含5,000个不变量的挑战性测试集上，FLAMES在44.5%的案例中生成了与“真实值”（ground truth）精确匹配或语义等效的匹配。至关重要的是，在漏洞缓解方面，FLAMES成功阻止了108个真实漏洞中的22个（20.4%），同时保留了合约的功能性；并且它通过合成有效的前置条件，成功阻止了真实世界的APEMAGA事件。这些发现表明，领域适应型LLMs（如FLAMES所实现的）能够自动为智能合约生成实用且可用于生产的安全性防御措施。</p>
+        
+        <h3>8. The Qey: Implementation and performance study of post quantum cryptography in FIDO2</h3>
+        <p><b>作者：</b>Aditya Mitra, Sibi Chakkaravarthy Sethuraman<br/>
+        <a href="http://arxiv.org/abs/2510.21353v1">摘要页</a> | <a href="https://arxiv.org/pdf/2510.21353v1">PDF</a></p>
+        <p style="white-space: pre-line;">**印度VIT-AP大学的研究人员研制了一款名为“The Qey”的开创性物理FIDO2安全密钥，旨在集成后量子密码学 (PQC)，并解决当前认证标准对未来量子计算机攻击的脆弱性。** 现有FIDO2实现依赖于ECDSA和RSA等经典密码算法，这些算法易受Shor算法等量子算法攻击，从而构成严重的“先窃取、后解密” (Harvest Now, Decrypt Later, 简称HNDL) 威胁。“The Qey”的研发动机在于探索源自CRYSTALS-Dilithium的模块格基数字签名算法 (ML-DSA) 作为FIDO2抗量子标准的可用性，同时克服了密钥/签名尺寸通常较大以及缺乏专用PQC硬件等挑战。
+
+“The Qey”采用ARM Cortex A-53处理器 (树莓派Zero 2W) 和定制的基于Python的客户端到认证器协议 (CTAP) 实现。该CTAP利用Open Quantum Safe (OQS) 库提供ML-DSA密码基元，同时保留了ES256经典算法作为回退选项。作为USB-HID设备，“The Qey”无需主机修改即可与标准FIDO2服务兼容。性能研究表明，ML-DSA在认证和注册操作中，尽管比经典ES256慢，但产生了数十毫秒级的延迟，这完全在可接受的用户体验阈值内。这一结果凸显了在消费级硬件上将PQC部署到FIDO2中的实际可行性。此外，“The Qey”保留了FIDO2固有的抗网络钓鱼和中间人 (MITM) 攻击能力，同时显著增强了对HNDL情景的安全性。该研究指出，目前缺乏支持PQC的安全元件或可信平台模块是物理安全方面的一个局限性，这也是未来混合密码解决方案的重点方向。</p>
+        
+        <h3>9. LLM-Powered Detection of Price Manipulation in DeFi</h3>
+        <p><b>作者：</b>Lu Liu, Wuqi Zhang, Lili Wei, Hao Guan, Yongqiang Tian, Yepang Liu<br/>
+        <a href="http://arxiv.org/abs/2510.21272v1">摘要页</a> | <a href="https://arxiv.org/pdf/2510.21272v1">PDF</a></p>
+        <p style="white-space: pre-line;">LILI WEI, McGill University, Canada, Yepang Liu, liuyp1@sustech.edu.cn, Southern University of Science and Technology, Shen Zhen, China., YONGQIANG TIAN, Monash University, Australia, Hong Kong, China; Lili Wei, lili.wei@mcgill.ca, McGill University, Montreal, Canada; Hao Guan, hguandl@icloud.com,, HAO GUAN, Nankai University, China, Nankai University, Tian Jin, China; Yongqiang Tian, yongqiang.tian@monash.edu, Monash University, Melbourne, Australia;, YEPANG LIU, Southern University of Science and Technology, China, Authors’ Contact Information: Lu Liu, lliubf@connect.ust.hk, The Hong Kong University of Science and Technology,, LU LIU, The Hong Kong University of Science and Technology, China, 及其同事提出PMDetector，这是一种新颖的混合框架，旨在主动检测去中心化金融（DeFi）智能合约中的价格操纵漏洞。本研究的动机源于因价格操纵攻击（通常利用闪电贷）造成的巨额经济损失，以及现有检测方法的固有局限性。被动式方法仅能在攻击发生后识别，而当前主动式静态分析工具依赖僵化、预定义的启发式规则，这限制了它们对新型攻击变体的适应性以及理解复杂经济逻辑的能力，从而导致误报（false negatives）和漏报（false positives）。此外，将大型语言模型（LLMs）直接应用于该领域也面临挑战，例如缺乏领域特定的经济学知识、在代码推理中存在幻觉（hallucination）的倾向，以及对复杂、路径依赖型经济漏洞利用的泛化能力有限。
+
+为解决这些挑战，PMDetector通过将静态分析与基于LLM的推理相结合，构建了一个三阶段管道（pipeline），该管道由一个定义了价格操纵语义的形式化攻击模型所指导。首先，静态污点分析（static taint analysis）识别出外部价格输入可能影响关键金融操作的潜在脆弱代码路径。随后是一个两阶段的LLM处理过程：首先，它通过评估防御机制的有效性来筛选路径，以剪除安全的执行流；接着，它模拟攻击以评估剩余高风险候选的漏洞可利用性。最后，一个基于规则的静态分析检查器验证LLM的结果，通过将路径与既定的防御机制进行交叉参照来减轻幻觉问题，从而仅保留高风险路径并生成全面的漏洞报告。
+
+PMDetector在一个包含73个真实世界中存在漏洞（造成超过2.58亿美元损失）和288个良性DeFi协议的综合基准上进行评估，使用Gemini 2.5-flash实现了88%的准确率（precision）和90%的召回率（recall），显著优于最先进的静态分析和基于LLM的基线方法。该框架还展示了卓越的效率和成本效益，使用GPT-4.1审计一个漏洞仅需0.03美元和4.0秒，为昂贵的人工审计提供了一个极具吸引力的替代方案。</p>
+        
+        <h3>10. What&#x27;s Next, Cloud? A Forensic Framework for Analyzing Self-Hosted Cloud Storage Solutions</h3>
+        <p><b>作者：</b>Michael Külper, Jan-Niclas Hilgert, Frank Breitinger, Martin Lambertz<br/>
+        <a href="http://arxiv.org/abs/2510.21246v1">摘要页</a> | <a href="https://arxiv.org/pdf/2510.21246v1">PDF</a></p>
+        <p style="white-space: pre-line;">奥格斯堡大学与弗劳恩霍夫FKIE研究所合作，旨在解决Nextcloud等自托管云存储解决方案在数字取证调查中日益增长的挑战。鉴于这些平台为增强数据控制和隐私而日益被广泛采用，作者指出，尽管Nextcloud被广泛使用，但在取证研究中受到的关注有限，并批判性地审视了现有云存储取证框架在系统性分析客户端和服务器组件方面的局限性。
+
+为克服这些不足，研究人员提出了一个扩展的取证框架，该框架整合了设备监控并利用云API，以实现结构化、可重复的证据获取。他们以Nextcloud为例进行了全面深入的研究，对Nextcloud的安卓客户端和服务器应用程序进行了详细的取证分析。此分析识别出七类关键取证工件，涉及用户数据、账户、设备信息、文件、同步、用户活动、文件版本控制、删除和共享，并提供了对其存储机制（例如SQLite数据库、XML文件、服务器端数据库表和日志文件）的具体见解。作为一项实践成果，他们推出了一款实现了其基于API方法的开源获取工具，该工具证明了Nextcloud的原生API如何能够可靠地访问取证工件。所开发的框架因此为调查人员提供了一种更灵活、更系统化的方法来分析自托管云存储系统，为数字取证领域的未来发展奠定了关键基础。</p>
+        
+        <h3>11. Securing AI Agent Execution</h3>
+        <p><b>作者：</b>Christoph Bühler, Matteo Biagiola, Luca Di Grazia, Guido Salvaneschi<br/>
+        <a href="http://arxiv.org/abs/2510.21236v1">摘要页</a> | <a href="https://arxiv.org/pdf/2510.21236v1">PDF</a></p>
+        <p style="white-space: pre-line;">LUCA DI GRAZIA, University of St. Gallen, Switzerland, GUIDO SALVANESCHI, University of St. Gallen, Switzerland, Authors’ Contact Information: Christoph Bühler, christoph.buehler@unisg.ch, University of St. Gallen, St. Gallen, SG, Switzerland; Matteo Biagiola,, CHRISTOPH BÜHLER, University of St. Gallen, Switzerland, matteo.biagiola@{usi,unisg}.ch, University of St. Gallen and Università della Svizzera italiana, St. Gallen and Lugano, SG and TI, Switzerland; Luca Di, Grazia, work@lucadigrazia.com, University of St. Gallen, St. Gallen, SG, Switzerland; Guido Salvaneschi, guido.salvaneschi@unisg.ch, University of, MATTEO BIAGIOLA, University of St. Gallen and Università della Svizzera italiana, Switzerland
+
+提出了AgentBound，一个创新的访问控制框架，旨在保障AI智能体执行的安全。其研究动机源于模型上下文协议（Model Context Protocol, MCP）中普遍存在的严重安全漏洞。MCP是一个事实标准，用于使大型语言模型（LLM）驱动的AI智能体与外部工具和环境进行交互。目前，数千个MCP服务器以对宿主系统不受限的访问权限运行，形成了一个巨大的攻击面，极易受到数据泄露、恶意软件执行及其他恶意行为的攻击，这与成熟平台中健全的权限模型形成了鲜明对比。现有的安全措施，例如静态分析器和监控工具，已证明不足以解决这种“默认信任”范式。
+
+为缓解这些风险，作者提出了AgentBound，它包含一个声明式策略机制和一个强大的策略执行引擎。该策略机制借鉴了Android权限模型，允许明确地、以最小权限原则指定MCP服务器合法所需的资源（例如文件、网络、密钥）。执行引擎随后无缝集成到现有智能体工作流中，无需修改MCP服务器，以确保在运行时遵守这些已定义的策略，从而遏制潜在的恶意或错误行为。对包含296个流行MCP服务器的数据集进行的评估证明了AgentBound的有效性：它在自动生成访问控制策略方面达到了80.9%的准确率，开发人员反馈确认其对真实世界权限的词汇覆盖率达到100%。至关重要的是，AgentBound成功阻止了来自各种恶意MCP服务器的大部分威胁，同时引入的平均运行时开销可忽略不计，仅为0.6毫秒。这些贡献为保障MCP服务器安全提供了一个实用、高性能的解决方案，同时也为未来在声明式访问控制和更广泛的MCP安全领域的研究奠定了基础。</p>
+        
+        <h3>12. Enhanced MLLM Black-Box Jailbreaking Attacks and Defenses</h3>
+        <p><b>作者：</b>Xingwei Zhong, Kar Wai Fok, Vrizlynn L. L. Thing<br/>
+        <a href="http://arxiv.org/abs/2510.21214v1">摘要页</a> | <a href="https://arxiv.org/pdf/2510.21214v1">PDF</a></p>
+        <p style="white-space: pre-line;">研究团队开发了一种增强型黑盒越狱方法，旨在针对多模态大语言模型（MLLMs）。鉴于这些模型面临日益增长的安全威胁，尤其是通过其视觉模态的脆弱性，该项研究应运而生。
+
+鉴于现有攻击的局限性，该团队引入了一种创新性的“重攻击”策略。该策略结合了挑衅性设计的文本提示——包含煽动性指令、列表形式及鼓励详细内容生成——与采用图像变异（通过高斯模糊、颜色抖动和随机色调分离）及多图像功能的图像提示。这种方法策略性地对抵制初始尝试的MLLMs进行重攻击。在开源（例如LLaVA-NeXT、MiniGPT、DeepSeek-VL2）和闭源（GPT-4o）MLLMs上进行的实证评估显示，攻击成功率（ASR）显著提升，其中开源模型ASR超过70%，而GPT-4o相较于HADES攻击提升了4.6倍，特别突出了多图像提示带来的挑战。
+
+此外，为了强化MLLM对这些先进威胁的防护能力，研究团队评估并增强了现有的训练时（AdaShield-A）和推理时（AdaShield-S、JailGuard）防御机制。他们通过调整文本提示的顺序以优先防御重点来改进了AdaShield，并通过在小样本数据集上允许一定误拒率来优化阈值选择，从而完善了JailGuard。实验结果证实，这些重新设计的防御策略显著提升了MLLM对抗所提出的增强型黑盒越狱攻击的防护效果。</p>
+        
+        <h3>13. The Trojan Example: Jailbreaking LLMs through Template Filling and Unsafety Reasoning</h3>
+        <p><b>作者：</b>Mingrui Liu, Sixiao Zhang, Cheng Long, Kwok Yan Lam<br/>
+        <a href="http://arxiv.org/abs/2510.21190v1">摘要页</a> | <a href="https://arxiv.org/pdf/2510.21190v1">PDF</a></p>
+        <p style="white-space: pre-line;">对ChatGPT或Gemini等闭源系统而言，这些方法不可用，南洋理工大学的研究人员引入了TrojFill，这是一种新颖的黑盒越狱方法，旨在解决现有方法的局限性。受以下观察结果的启发：大语言模型（LLM）尽管经过了安全微调，但仍易受对抗性提示的攻击，并且它们虽然通常会拒绝明确的不安全指令，却往往会遵从分析所提供有害内容不安全性的请求，TrojFill正是利用了这种“不安全性推理”能力。现有白盒越狱方法因依赖模型内部机制和高计算成本，对闭源API而言不可行，而此前的黑盒方法通常缺乏可解释性、可迁移性，且随着LLM的进步效果会降低，因为它们主要依赖于说服性框架，而非根本性的任务重定义。
+
+TrojFill将不安全指令遵循重构为一项结合不安全性推理的模板填充任务。它将通过占位符替换、凯撒密码或Base64编码等方法转换而成的混淆有害指令，嵌入到一个多部分提示模板中。该模板首先要求模型反思原始指令为何可能不安全，随后请求生成一个包含隐藏越狱内容的详细示例文本（例如，教程或电子邮件）——此示例充当“特洛伊木马”，最后要求对该生成示例进行逐句分析。这种围绕式任务框架有效地降低了拒绝率。为增强鲁棒性和可迁移性，TrojFill还采用了一个攻击者LLM来迭代重写转换后的指令，从而生成多样化的混淆变体。在针对ChatGPT、Gemini、DeepSeek和Qwen等主流LLM的标准越狱基准测试中进行评估，TrojFill展现出强大的实证性能，在Gemini-flash-2.5和DeepSeek-3.1上实现了100%的攻击成功率，在GPT-4o上达到了97%。该方法在成功率和鲁棒性方面持续优于现有黑盒基线，同时生成的提示具有更高的可解释性和可迁移性。</p>
+        
+        <h3>14. Adjacent Words, Divergent Intents: Jailbreaking Large Language Models via Task Concurrency</h3>
+        <p><b>作者：</b>Yukun Jiang, Mingjie Li, Michael Backes, Yang Zhang<br/>
+        <a href="http://arxiv.org/abs/2510.21189v1">摘要页</a> | <a href="https://arxiv.org/pdf/2510.21189v1">PDF</a></p>
+        <p style="white-space: pre-line;">我们的代码可在 https://github.com/TrustAIRLab/JAIL-CON 获取。
+
+本文深入研究了一种新颖的大语言模型（LLMs）越狱方式，其核心在于利用任务并发性，这是一种现有序列逻辑攻击在很大程度上忽视的范式。鉴于并发性可能引入新的安全漏洞，作者提出了一种词级别方法，以实现LLMs的并发任务处理。该方法通过在单个提示中交错来自两个不同任务的词语，使相邻词编码不同的意图。初步评估表明，LLMs在处理此类并发任务时保持了强大的实用性，在数学和通用问答基准上的表现可与顺序执行相媲美。关键的是，研究人员观察到，将一个有害任务与一个良性任务结合，显著降低了有害内容被LLM防护栏过滤的概率，揭示了严峻的安全风险。
+
+基于这些发现，本文提出了JAIL-CON，这是一个旨在通过任务并发性越狱LLMs的迭代攻击框架。JAIL-CON主要通过三个步骤运行：任务组合（将有害任务与良性辅助任务合并）、并发执行（提示目标LLM使用“有效任务并发”或“空闲任务并发”等变体来回答组合任务），以及影子判断器（提取并评估有害答案，若不成功则迭代）。对六个广泛使用的大语言模型进行的广泛实验表明，在没有防护栏的情况下，JAIL-CON实现了0.95的攻击成功率（ASR），显著超越了现有方法。当应用防护栏时，JAIL-CON表现出更高的隐蔽性，过滤率显著降低，且成功绕过内容过滤的ASR达到0.64，大幅优于次优攻击。这项工作强调了任务并发性所带来的独特风险，为针对LLMs的越狱攻击提供了一个新的攻击面，并凸显了加强安全机制的必要性。</p>
+        
+        <h3>15. Quantifying CBRN Risk in Frontier Models</h3>
+        <p><b>作者：</b>Divyanshu Kumar, Nitin Aravind Birur, Tanay Baswa, Sahil Agarwal, Prashanth Harshangi<br/>
+        <a href="http://arxiv.org/abs/2510.21133v1">摘要页</a> | <a href="https://arxiv.org/pdf/2510.21133v1">PDF</a></p>
+        <p style="white-space: pre-line;">研究团队首次对前沿大型语言模型（LLMs）固有的双重用途风险进行了全面评估，特别关注其促进化学、生物、放射性及核（CBRN）武器知识扩散的潜在能力。鉴于在实证评估安全措施抵御复杂对抗性技术方面的显著研究空白，以及现有评估（通常依赖直接提示或过度侧重生物风险）的局限性，该团队旨在系统性地量化LLM的脆弱性。其方法学涉及评估10个领先的商用LLM，利用一个包含200个提示的、新颖的定制CBRN数据集（旨在涵盖所有CBRN领域，并评估包括事实回忆、过程指导、新颖生成和合成指导在内的各种能力），以及FORTRESS基准测试的一个包含180个提示的子集。采用了严格的三层攻击方法，从直接请求、混淆请求逐步升级到高级深度诱导攻击，旨在模拟真实的对抗行为并规避表层安全机制。
+
+研究结果揭示了关键的安全脆弱性，并暴露了当前安全对齐机制中存在的根本性脆性。深度诱导攻击在定制CBRN数据集上达到了86.0%的攻击成功率（ASR）中位数，显著高于直接请求的33.8%，从而表明当前的安全防护措施主要依赖表层模式匹配，而非对有害意图的语义理解。此外，模型安全性能差异显著，攻击成功率从2%（Claude-Opus-4）到96%（Mistral-Small-Latest）不等，突显了行业内安全实施的巨大不一致性。值得注意的是，在所评估的十个模型中，有八个在被提示增强危险材料属性时，脆弱性超过70%。这些结果对当前行业的安全主张提出了挑战，并强调迫切需要标准化的评估框架、透明的安全指标以及更强大的对齐技术，以有效减轻灾难性滥用风险，同时保留LLM的有益能力。</p>
+        
+        <h3>16. QAE-BAC: Achieving Quantifiable Anonymity and Efficiency in Blockchain-Based Access Control with Attribute</h3>
+        <p><b>作者：</b>Jie Zhang, Xiaohong Li, Mengke Zhang, Ruitao Feng, Shanshan Xu, Zhe Hou, Guangdong Bai<br/>
+        <a href="http://arxiv.org/abs/2510.21124v1">摘要页</a> | <a href="https://arxiv.org/pdf/2510.21124v1">PDF</a></p>
+        <p style="white-space: pre-line;">Jie Zhang、Xiaohong Li和Mengke Zhang，均就职于中国天津大学智能与计算学部（电子邮件：{jackzhang, xiaohongli, mengkezhangcs}@tju.edu.cn），他们与同事们共同提出了一种名为QAE-BAC（Quantifiable Anonymity and Efficiency in Blockchain-Based Access Control with Attribute，即基于属性的区块链访问控制中可量化的匿名性与效率）的创新框架。
+
+该创新框架旨在解决基于区块链的属性基访问控制（BC-ABAC）系统中隐私保护与效率并存的双重挑战。研究动机源于两个关键问题：一是区块链账本的透明性，这易通过属性分析导致重识别攻击；二是策略匹配的高计算复杂度，这与区块链的性能限制相冲突。现有解决方案常面临高昂开销（例如，零知识证明缺乏可量化的匿名性）或在追求效率时忽视隐私问题。这凸显了当前亟需一个能够将持续、可量化的匿名性评估与性能优化相结合的整体性框架。
+
+为解决上述问题，QAE-BAC引入了一个形式化的(r, t)-匿名模型，以动态量化基于用户访问属性和历史的重识别风险。此外，该框架集成了熵加权路径树（EWPT），可根据实时匿名性指标优化策略结构，从而大幅降低策略匹配的复杂度。这种创新的闭环反馈系统确保了性能优化始终以隐私考量为指导。QAE-BAC在Hyperledger Fabric上使用真实世界属性数据集进行了实现和评估，结果显示其在隐私与性能之间取得了卓越的平衡。实验结果证实，QAE-BAC在缓解重识别风险方面具有显著成效，并且相较于现有最先进的基线方法，取得了显著提升，例如吞吐量提高了11倍，延迟降低了87%。这充分证明了其在隐私敏感的去中心化应用中的实用性。</p>
+        
+        <h3>17. DictPFL: Efficient and Private Federated Learning on Encrypted Gradients</h3>
+        <p><b>作者：</b>Jiaqi Xue, Mayank Kumar, Yuzhang Shang, Shangqian Gao, Rui Ning, Mengxin Zheng, Xiaoqian Jiang, Qian Lou<br/>
+        <a href="http://arxiv.org/abs/2510.21086v1">摘要页</a> | <a href="https://arxiv.org/pdf/2510.21086v1">PDF</a></p>
+        <p style="white-space: pre-line;">Old Dominion University, Florida State University, University of Central Florida, University of Texas Health Science Center at Houston 的研究人员提出了 DictPFL，这是一个新颖的框架，旨在解决基于同态加密（HE）的联邦学习（FL）中实现效率和全面隐私保护的关键挑战。现有的基于HE的FL方法，要么通过加密所有梯度而导致过高的计算和通信开销，要么通过选择性地加密部分梯度来损害隐私，使其容易受到梯度反演等攻击的漏洞。鉴于对实用、完全隐私的FL的需求，DictPFL 确保所有传输的梯度都被加密，同时最小化加密负担，从而使基于HE的FL在实际部署中成为可能。
+
+DictPFL 通过两个创新模块实现这一点：拆解局部加密（DePE）和剪枝最小加密（PrME）。DePE 将模型权重分解为静态的、全局一致的字典和一个可更新的查找表；只有查找表的加密梯度被共享和聚合，而静态字典保持本地且未加密。PrME 通过对查找表应用加密感知剪枝，并利用共享的全局梯度历史来确保客户端之间的一致剪枝，从而进一步减少了加密参数的数量。这种方法显著减少了交换的密文数量，同时不损害隐私。实验结果表明，与完全加密的FL相比，DictPFL 显著降低了402–748倍的通信成本，并加速训练28–65倍；同时在开销上比最先进的选择性加密方法低51–155倍，速度快4–19倍。值得注意的是，DictPFL 的运行时间仅为明文FL的2倍以内，这表明基于HE的隐私联邦学习首次实现了大规模的实际部署。</p>
+        
+        <h3>18. Soft Instruction De-escalation Defense</h3>
+        <p><b>作者：</b>Nils Philipp Walter, Chawin Sitawarin, Jamie Hayes, David Stutz, Ilia Shumailov<br/>
+        <a href="http://arxiv.org/abs/2510.21057v1">摘要页</a> | <a href="https://arxiv.org/pdf/2510.21057v1">PDF</a></p>
+        <p style="white-space: pre-line;">研究团队关注到在智能体系统中部署的大型语言模型（LLMs）对提示注入攻击（prompt injection attacks）的严重脆弱性，这些攻击通常源于与不可信外部数据的交互。鉴于现有防御措施常伴随高误报率（false positive rates）或易被绕过的问题，研究团队开发了**软指令控制（Soft Instruction Control, 简称SIC）**方法。该方法引入了一种简洁而高效的迭代式提示净化循环机制，其设计初衷是作为工具增强型LLM智能体的模块化预处理层（modular preprocessing layer）。
+
+SIC反复审查传入数据中可能危及智能体行为的命令性指令（imperative instructions），随后对这类内容进行重写（rewrites）、掩盖（masks）或移除处理。这一过程会通过多轮迭代（multiple passes）持续进行，直至输入内容被彻底净化或达到预设的迭代上限。为确保安全性，若仍存在任何类似命令性指令的内容，智能体将立即停止运行。SIC通过注入控制指令以检测重写器（rewriter）的篡改行为、采用多个独立的净化通道（sanitization passes），以及在完整输入和分块输入（chunked inputs）中同时检测指令，从而显著增强了系统的鲁棒性（robustness）。
+
+实证评估结果表明，SIC展现出显著的有效性，尤其在AgentDojo基准测试中，能够有效抵御针对Kimi-k2、GPT-4o、GPT-4.1-mini和Qwen3-32B等多种前沿LLM的各类提示注入攻击。即使是SIC的一种基础配置，仅通过单次重写（single rewrite pass）并结合掩盖（masking）机制，也成功将攻击成功率（Attack Success Rate, 简称ASR）降至0%。诚然，最坏情况分析表明，强大的攻击者仍可能通过嵌入非命令性工作流（non-imperative workflows）来达到15%的ASR，但研究团队仍得出结论：SIC显著提升了成功发动攻击的难度。综上所述，该防御方法被评价为简洁、计算高效（具备线性扩展能力），且能有效应对各类提示注入威胁，同时无需对底层LLM智能体进行任何修改。</p>
+        
+        <h3>19. LLMs can hide text in other text of the same length</h3>
+        <p><b>作者：</b>Antonio Norelli, Michael Bronstein<br/>
+        <a href="http://arxiv.org/abs/2510.20075v2">摘要页</a> | <a href="https://arxiv.org/pdf/2510.20075v2">PDF</a></p>
+        <p style="white-space: pre-line;">该论文（可在 https://github.com/noranta4/calgacus 查阅，并可在数分钟内通过智能手机访问），由牛津大学发布，提出了一项新颖协议，使得大型语言模型（LLMs）能够将一段有意义的文本隐匿于另一段完全不同、但连贯合理且长度相同的文本之中。这种能力，例如将政治批判隐匿于祝贺推文之中，或将秘密手稿隐藏在产品评论之内，凸显了文本与作者意图的根本性分离，从而挑战了书面交流中既有的信任观念，并对人工智能安全提出了紧迫问题。
+
+所提出的方法简洁高效：首先将任意秘密文本（`e`）进行分词处理，并记录每个词元（token）在给定其前文语境下，LLM预测概率分布中的排名。接着，利用LLM生成一个“伪装”文本（`s`），该过程由一个秘密提示（`k`）引导；但与常规采样不同的是，`s`的第`i`个词元被确定性地选为第`r_i`个最可能出现的词元，其中`r_i`对应于`e`中第`i`个词元的排名。通过逆转这种确定性生成过程，原始秘密文本可以被完美恢复。
+
+该协议展现出高效能，即使是参数量适中的80亿参数开源LLM，也能生成看起来合理的“伪装”文本，这些文本仍处于现实世界文本（例如Reddit帖子）的统计分布之内。对摘要长度的消息进行编码和解码，可在几秒钟内在本地笔记本电脑上完成。尽管这些生成的隐写文本（stegotexts）在人类读者看来是自然的，但该论文表明，LLMs平均而言可以区分它们与原始文本，即使在单个词元排名保持不变的情况下，也能通过赋予它们更低的总概率来区分。这种差异产生于真实文本通常表现出低熵的词元选择，而隐写文本的排名驱动生成过程较少复现这些选择。作者强调了这对人工智能安全的深远影响，特别是隐蔽部署伪装成合规输出的未经筛选的LLM响应的可能性，从而从根本上质疑了LLM“知道”某事究竟意味着什么。</p>
+        
+    <hr/><p style="color:#888">自动生成 · 请核对原文。</p></body></html>
+    
