@@ -70,6 +70,28 @@ If you only want to preview the generated HTML without sending mail, remove or c
 - Google Generative AI usage may incur costs; ensure your API key and quota are managed appropriately.
 - If network libraries (e.g., `httpx`) fail, check your proxy/firewall settings.
 
+## Future Plans
+
+The following features are planned for future releases:
+
+### Multi-language Support
+
+- Add support for summarizing papers in multiple languages
+- Allow configurable output language preferences
+- Support multilingual email templates
+
+### Custom Date Range
+
+- Add ability to specify custom date ranges for paper fetching
+- Support historical paper digests
+- Add scheduling options for digest generation
+
+### Multi-subject Support
+
+- Enable fetching papers from multiple arXiv categories simultaneously
+- Add subject-based filtering and organization
+- Support custom topic grouping and categorization
+
 ## License
 
 MIT-style (no license file included). Use as you wish and be mindful of API/key usage and privacy of content.
