@@ -1,0 +1,11 @@
+python-dotenv
+arxiv
+httpx
+PyMuPDF
+pydantic>=1.10
+google-generativeai
+
+# Notes:
+# - These are minimal, best-effort requirements inferred from imports in the code.
+# - The script uses Python 3.10+ features (e.g. PEP 604 union types `X | None`).
+# - Pin versions as needed for deployment; test in a virtualenv before production.
